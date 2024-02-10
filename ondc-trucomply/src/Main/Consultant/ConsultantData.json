@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "specialization": "GST Compliance",
+    "description": "Helping businesses navigate complex regulatory environments and ensure compliance with industry standards.",
+    "tags": ["GST", "Compliance", "Tax"],
+    "url": "https://retratosbarcelona.com/wp-content/uploads/2022/09/Retratos_Barcelona_Corporate_Headshot_Iberent_3.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "specialization": "Data Privacy",
+    "description": "Expert in implementing data privacy measures and ensuring compliance with GDPR, CCPA, and other data protection regulations.",
+    "tags": ["Data Privacy", "Security", "Compliance"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJQFKa4UfJ5HhvAWaBhFPEOBrdyb5ikNVqg&usqp=CAU"
+  },
+  {
+    "id": 3,
+    "name": "David Johnson",
+    "specialization": "Certificates Management",
+    "description": "Providing cybersecurity assessments, risk analysis, and implementation of security measures to protect against cyber threats.",
+    "tags": ["Certificates", "Compliance", "Management"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgVK63b4lFVyVXMyCNbEIMvEmTNPoKe5xooQ&usqp=CAU"
+  },
+  {
+    "id": 4,
+    "name": "Emily Brown",
+    "specialization": "Permissions Consulting",
+    "description": "Assisting financial institutions in complying with regulatory requirements such as KYC, AML, and Dodd-Frank Act.",
+    "tags": ["Permissions", "Consulting", "Compliance"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaA0vamRCB-wh6wEtTauB3nWjrTCRnSo9FJw&usqp=CAU"
+  },
+  {
+    "id": 5,
+    "name": "Michael Taylor",
+    "specialization": "Risk Assessment",
+    "description": "Helping healthcare organizations navigate HIPAA regulations and ensure compliance with healthcare laws and standards.",
+    "tags": ["Risk Assessment", "Security", "Compliance"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShasLGQKPB88nCEqtblpgGasgFHQQZHFmxYg&usqp=CAU"
+  },
+  {
+    "id": 6,
+    "name": "Sarah Martinez",
+    "specialization": "Corporate Governance",
+    "description": "Assisting companies in adhering to environmental regulations, conducting environmental impact assessments, and implementing sustainable practices.",
+    "tags": ["Corporate Governance", "Compliance", "Management"],
+    "url": "https://img.freepik.com/free-photo/african-business-lady-standing-grey-background_171337-16083.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Robert Clark",
+    "specialization": "Ethics Compliance",
+    "description": "Managing supply chain compliance processes, ensuring adherence to supplier standards, and mitigating risks associated with supply chain operations.",
+    "tags": ["Ethics", "Compliance", "Consulting"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpIoI76wjvQ2pq6t25TLmRAwTxv118OFKZxykoCiY_fWRtR8QRr1nWWcDtG3tHdgCuWu8&usqp=CAU"
+  },
+  {
+    "id": 8,
+    "name": "Jessica Lewis",
+    "specialization": "Financial Regulations",
+    "description": "Providing legal guidance and support to ensure compliance with laws and regulations relevant to the industry.",
+    "tags": ["Financial Regulations", "Compliance", "Consulting"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-wq5bwwbn0cFhs2F4nWn1ZGgOrsNG3JKbQ&usqp=CAU"
+  },
+  {
+    "id": 9,
+    "name": "Christopher Walker",
+    "specialization": "Auditing",
+    "description": "Assessing technology systems, ensuring compliance with data security standards, and implementing controls to mitigate technology risks.",
+    "tags": ["Auditing", "Compliance", "Consulting"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB5FPXkNj10niBApAnR4TXDX80UkrAIp7PWA&usqp=CAU"
+  },
+  {
+    "id": 10,
+    "name": "Amanda White",
+    "specialization": "Legal Compliance",
+    "description": "Promoting ethical behavior and integrity within organizations through training programs, policy development, and ethical audits.",
+    "tags": ["Legal Compliance", "Compliance", "Regulations"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShxh4kRJ4z_5Ny6FHTUmqkJHxREneUn6otIA&usqp=CAU"
+  },
+  {
+    "id": 11,
+    "name": "Daniel Brown",
+    "specialization": "Supply Chain Management",
+    "description": "Helping companies optimize their supply chain processes, reduce costs, and ensure compliance with industry regulations.",
+    "tags": ["Supply Chain", "Management", "Compliance"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWT8ELKdEnFyiTwAEVBjmbPpIq2XlzanLEw&usqp=CAU"
+  },
+  {
+    "id": 12,
+    "name": "Olivia Garcia",
+    "specialization": "Health and Safety",
+    "description": "Ensuring workplace safety, conducting risk assessments, and implementing safety protocols to comply with OSHA and other regulations.",
+    "tags": ["Health and Safety", "Compliance", "Regulations"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZhCLGDGd-sWxeOs0Dds1Nv3oQcS0RfDu_4w&usqp=CAU"
+  },
+  {
+    "id": 13,
+    "name": "William Turner",
+    "specialization": "Environmental Compliance",
+    "description": "Assisting businesses in complying with environmental laws, reducing environmental impact, and implementing sustainable practices.",
+    "tags": ["Environmental Compliance", "Sustainability", "Regulations"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjKszKje_YA0mnQYVpshY2IgGhAvX24Aurw&usqp=CAU"
+  },
+  {
+    "id": 14,
+    "name": "Sophia Moore",
+    "specialization": "IT Security",
+    "description": "Implementing cybersecurity measures, conducting vulnerability assessments, and ensuring compliance with data protection regulations.",
+    "tags": ["IT Security", "Cybersecurity", "Compliance"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVDYdRoDFo4avoWtcB_1rDNd_8cK-B-iPBBNInLUEoOAK9jUp8RN8neW0itmG_bbIX_sA&usqp=CAU"
+  },
+  {
+    "id": 15,
+    "name": "Ethan Adams",
+    "specialization": "Financial Compliance",
+    "description": "Providing financial compliance services, conducting audits, and ensuring adherence to financial regulations and standards.",
+    "tags": ["Financial Compliance", "Auditing", "Regulations"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bZFMn4FDzgkk0bupnmy2gJngc8nwOTqjUcYqK84UClXQkrMPORECgntwMmM_KEf1-_A&usqp=CAU"
+  },
+  {
+    "id": 16,
+    "name": "Isabella Rivera",
+    "specialization": "Quality Management",
+    "description": "Implementing quality management systems, conducting audits, and ensuring compliance with ISO standards.",
+    "tags": ["Quality Management", "ISO Standards", "Compliance"],
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGUYwXCVqaRh4E13VJQvQBIviSUedcDhma4g&usqp=CAU"
+  }
+]
