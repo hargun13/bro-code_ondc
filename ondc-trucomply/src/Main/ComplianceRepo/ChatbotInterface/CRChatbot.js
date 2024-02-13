@@ -22,6 +22,7 @@ const CRChatbot = () => {
     if (pdfURL) {
       startConversation();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pdfURL]);
 
   const startConversation = async () => {
