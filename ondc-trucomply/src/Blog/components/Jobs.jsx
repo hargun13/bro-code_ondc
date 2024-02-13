@@ -2,7 +2,7 @@ import React from 'react'
 import jobs from './JobsData'
 import { BiHeart } from 'react-icons/bi'
 import {BsArrowRight} from 'react-icons/bs'
-import { Fade } from 'react-reveal'
+
 
 
 const Jobs = () => {
@@ -16,7 +16,7 @@ const Jobs = () => {
       <div className='flex flex-wrap gap-10 items-center justify-start md:mx-8 -z-50'>
         
         {jobs.map((jobs) => (
-        <Fade bottom>
+
         <div className='h-auto w-[350px] p-4 border-[1px] border-gray-100 rounded-xl shadow-xl -z-50'>
 
             <div className='flex items-center justify-between w-full'>
@@ -49,7 +49,7 @@ const Jobs = () => {
             </div>
 
         </div>
-        </Fade>
+
         ))}
 
         <div className='w-full flex items-center justify-center'>  

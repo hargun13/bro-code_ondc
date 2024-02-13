@@ -9,8 +9,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import logo from '../Logos/trucomply.png'
 import hero from './fitness-hero.png'
-import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
+
 
 const Login = ({setLogin}) => {
     const [email, setEmail] = useState("");
@@ -39,12 +38,12 @@ const Login = ({setLogin}) => {
 
         <div className="w-[60%] flex flex-col items-center justify-center h-full">
             
-            <Flip left><img src={hero} alt="rupee" className=" w-[550px]"/></Flip>
+            <img src={hero} alt="rupee" className=" w-[550px]"/>
         
         </div>
         
         
-        <Fade left>
+
         <div className="h-[90%] w-[40%] rounded-3xl bg-white flex flex-col item-center justify-center shadow-2xl">
 
             <div className=" w-full pt-4">
@@ -108,7 +107,7 @@ const Login = ({setLogin}) => {
             </div>
 
         </div>
-        </Fade>
+
         
     </div>
   );

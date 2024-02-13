@@ -8,8 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import logo from '../Logos/trucomply.png'
 import hero from './fitness-hero2.png'
-import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
+
 
 const Signup = ({setLogin}) => {
     const [email, setEmail] = useState("");
@@ -40,7 +39,7 @@ const Signup = ({setLogin}) => {
   return (
     <div style={{backgroundImage: `url(${bag2})`, backgroundSize:'cover'}} className="h-screen w-screen overflow-y-hidden flex items-center justify-between px-10" >
 
-        <Fade right>    
+
         <div className="h-[90%] w-[40%] rounded-3xl bg-white flex flex-col item-center justify-center shadow-2xl">
 
             <div className=" w-full pt-4">
@@ -104,14 +103,14 @@ const Signup = ({setLogin}) => {
             </div>
 
         </div>
-        </Fade>
+ 
 
 
 
         
         <div className="w-[60%] flex flex-col items-center justify-center h-full">
             
-            <Flip left><img src={hero} alt="hero" className=" w-[550px]"/></Flip>
+            <img src={hero} alt="hero" className=" w-[550px]"/>
         
         </div>
         
