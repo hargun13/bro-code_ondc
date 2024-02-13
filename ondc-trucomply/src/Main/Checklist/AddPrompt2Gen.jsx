@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 //, useEffect , { useState }
 // import { useNavigate, Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
@@ -11,7 +11,7 @@ import { ChecklistContext } from './ChecklistContext';
 const AddPrompt2Gen = () => {
 
   const {prompt, setPrompt} = useContext(ChecklistContext);
-  const {checklistData, setChecklistData} = useContext(ChecklistContext);
+  const {setChecklistData} = useContext(ChecklistContext);
 
   const handleGenerate = () => {
     fetch('http://localhost:5000/get_response', {

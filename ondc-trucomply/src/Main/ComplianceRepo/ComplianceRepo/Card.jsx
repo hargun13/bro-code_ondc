@@ -1,30 +1,32 @@
 import React, { useState, useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+// , useNavigate
 import Button from '@mui/material/Button';
 import { CRContext } from '../CRContext';
-import { Box } from "@mui/material";
-import Modal from '@mui/material/Modal';
+// import { Box } from "@mui/material";
+// import Modal from '@mui/material/Modal';
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 600,
-  bgcolor: '#15181C',
-  border: '1px solid ',
-  boxShadow: 24,
-  borderRadius: 5,
-  color: 'white',
-  px: 4,
-  py: 5
-};
+// const style = {
+//   position: 'absolute',
+//   top: '50%',
+//   left: '50%',
+//   transform: 'translate(-50%, -50%)',
+//   width: 600,
+//   bgcolor: '#15181C',
+//   border: '1px solid ',
+//   boxShadow: 24,
+//   borderRadius: 5,
+//   color: 'white',
+//   px: 4,
+//   py: 5
+// };
 
-const Card = ({ title, desc, category, date, penalties, firebase_storage_url }) => {
+const Card = ({ title, desc, category, date, firebase_storage_url }) => {
+  // penalties,
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+  // const handleClose = () => setOpen(false);
+  console.log(open)
   const { setTitle, setPdfURL } = useContext(CRContext);
   const handleLearnMore = () => {
     setPdfURL(firebase_storage_url);
