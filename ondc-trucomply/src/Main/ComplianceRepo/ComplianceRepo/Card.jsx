@@ -3,30 +3,30 @@ import { Link } from 'react-router-dom';
 // , useNavigate
 import Button from '@mui/material/Button';
 import { CRContext } from '../CRContext';
-// import { Box } from "@mui/material";
-// import Modal from '@mui/material/Modal';
+import { Box } from "@mui/material";
+import Modal from '@mui/material/Modal';
 
-// const style = {
-//   position: 'absolute',
-//   top: '50%',
-//   left: '50%',
-//   transform: 'translate(-50%, -50%)',
-//   width: 600,
-//   bgcolor: '#15181C',
-//   border: '1px solid ',
-//   boxShadow: 24,
-//   borderRadius: 5,
-//   color: 'white',
-//   px: 4,
-//   py: 5
-// };
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 600,
+  bgcolor: '#15181C',
+  border: '1px solid ',
+  boxShadow: 24,
+  borderRadius: 5,
+  color: 'white',
+  px: 4,
+  py: 5
+};
 
-const Card = ({ title, desc, category, date, firebase_storage_url }) => {
-  // penalties,
+const Card = ({ title, desc, category, date, penalties, firebase_storage_url }) => {
+
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
-  // const handleClose = () => setOpen(false);
-  console.log(open)
+  const handleClose = () => setOpen(false);
+  // console.log(open)
   const { setTitle, setPdfURL } = useContext(CRContext);
   const handleLearnMore = () => {
     setPdfURL(firebase_storage_url);
@@ -57,6 +57,39 @@ const Card = ({ title, desc, category, date, firebase_storage_url }) => {
           </div>
           <div>
             <Button onClick={handleOpen} variant='contained' style={{ marginRight: "10px" }}>Penalties</Button>
+            <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+            >
+              <Box sx={style}>
+                <h1 className="text-center text-2xl mb-10">Checklist for {prompt}</h1>
+                <div className='overflow-y-scroll p-3 h-48'>
+                <ul>
+                {Array.isArray(penalties) ? (
+                  penalties.map((penalty, index) => (
+                    <li key={index}>
+                      <p><span className='text-xl font-bold tracking-wide'>Offence:</span> {penalty.Offence}</p>
+                      <p><span className='text-xl font-bold tracking-wide'>Penalty:</span> {penalty.Penalty}</p>
+                      <br/>
+                    </li>
+                  ))
+                ) : (
+                  penalties && Object.entries(penalties).map(([offence, penalty], index) => (
+                    <li key={index}>
+                      <p><span className='text-xl font-bold tracking-wide'>Offence:</span> {offence}</p>
+                      <p><span className='text-xl font-bold tracking-wide'>Penalty:</span> {penalty}</p>
+                      <br/>
+                    </li>
+                  ))
+                )}
+
+                </ul>
+
+                </div>
+              </Box>
+            </Modal>
 
             <Link to='/crbot' onClick={handleLearnMore}><Button variant='contained'>Learn More</Button></Link>
           </div>

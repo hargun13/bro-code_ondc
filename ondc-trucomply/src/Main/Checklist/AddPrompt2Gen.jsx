@@ -10,11 +10,12 @@ import { ChecklistContext } from './ChecklistContext';
 
 const AddPrompt2Gen = () => {
 
-  const {prompt, setPrompt} = useContext(ChecklistContext);
+  const {prompt, setPrompt, setLoading} = useContext(ChecklistContext);
   const {setChecklistData} = useContext(ChecklistContext);
 
   const handleGenerate = () => {
-    fetch('http://localhost:5000/get_response', {
+    setLoading(true);
+    fetch('https://ondc-backend.onrender.com/get_response', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -23,9 +24,14 @@ const AddPrompt2Gen = () => {
     })
     .then(response => response.json())
     .then(data => {
-      setChecklistData(data.response);
+      setChecklistData(data);
+      setLoading(false);
+      console.log(data)
     })
-    .catch(error => console.error('Error:', error));
+    .catch(error => {
+      console.error('Error:', error);
+      setLoading(false);
+    });
   };
 
   return (

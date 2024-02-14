@@ -16,7 +16,16 @@ const CRChatbot = () => {
     return `${h.slice(-2)}:${m.slice(-2)}`;
   };
 
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    {
+      name: 'Compliance Bot',
+      img: img,
+      side: 'left',
+      text: 'Welcome to the Compliance Bot, ask me anything related to compliance infact ask me to get a list compliances to be completed for you',
+      time: formatDate(new Date()),
+    },
+  ]);
+
 
   useEffect(() => {
     if (pdfURL) {
@@ -27,7 +36,7 @@ const CRChatbot = () => {
 
   const startConversation = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:5000/upload_pdf_url", {
+      const response = await fetch("https://ondc-backend.onrender.com/upload_pdf_url", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +57,7 @@ const CRChatbot = () => {
 
   const botResponse = async (rawText) => {
     try {
-      const response = await fetch("http://127.0.0.1:5000/chat", {
+      const response = await fetch("https://ondc-backend.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

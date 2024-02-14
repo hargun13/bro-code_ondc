@@ -34,7 +34,7 @@ const FmcChatbot = () => {
 
   const botResponse = async (rawText) => {
     try {
-      const response = await fetch("http://127.0.0.1:5000/get", {
+      const response = await fetch("https://ondc-backend.onrender.com/get_response", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -47,7 +47,7 @@ const FmcChatbot = () => {
       }
   
       const data = await response.json();
-      const msgText = data.response;
+      const msgText = data;
       setMessages((prevMessages) => [
         ...prevMessages,
         { name: 'Chat Bot', img: img, side: 'left', text: msgText, time: formatDate(new Date()) },
